@@ -29,15 +29,18 @@ html {
 
 body {
    font-family: $font-primary;
-   color: rgb(45, 46, 46);
+   color: rgb(142, 146, 146);
    font-weight: 300;
    line-height: 1.6;
 }
 
 .container {
-   display:grid;
+   display: grid;
    grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
-   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) minmax(6rem, 1fr) [full-end];
+   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(
+         8,
+         [col-start] minmax(min-content, 14rem) [col-end]
+      ) minmax(6rem, 1fr) [full-end];
 
    // & > * {
    //    padding: 40px;
